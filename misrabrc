@@ -1,0 +1,55 @@
+
+# exports
+# development environment
+export ENV="development"
+
+# aliases
+alias emacs="emacs -nw"
+alias sudo="sudo "
+
+# functions
+function bp {
+  emacs ~/.misrabrc
+}
+function bpp {
+  source ~/.misrabrc
+}
+function gogit {
+  cd ~/code/github.com/misrab
+}
+function ct {
+  cargo test -- --nocapture
+}
+function cr {
+  cargo run -- $@
+}
+function jp {
+  jupyter notebook
+}
+# usage: push [branch] "[commit message]"
+function push {
+  commit="commit"
+  if [[ ! -z $2 ]]; then
+    commit="$2"
+  fi
+  
+  git add -A . && git commit -m $commit
+  
+  if [[ ! -z $1 ]]; then
+    git push origin $1
+  else
+    git push origin master
+  fi
+}
+# usage: pull [branch]
+function pull {
+  if [[ ! -z $1 ]]; then
+    git pull origin $1
+  else
+    git pull origin master
+  fi
+}
+function pullf {
+  git fetch --all
+  git reset --hard origin/master
+}
