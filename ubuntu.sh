@@ -5,23 +5,30 @@
 sudo apt update
 sudo apt upgrade 
 
-# install and configure emacs
-sudo apt install emacs
+# get bash profile commands
+curl https://raw.githubusercontent.com/misrab/scripts/master/misrabrc > ~/.misrabrc
+source ~/.misrabrc
 
-# disable x11 on emacs
-echo -e "alias emacs=\"emacs -nw\"\nalias sudo=\"sudo \"" >> ~/.bashrc
+# load command in ~/.misrabrc and tell ~/.bashrc to read them
+echo "source ~/.misrabrc" >> ~/.bashrc
+
+# install and configure emacs
+sudo apt-get install emacs
 
 # install git
 sudo apt-get install git
 
-# install golang
+# install golang and create code repo
+# TODO
+mkdir ~/code && mkdir ~/code/github.com && mkdir ~/code/github.com/misrab
+
+# install conda with jupyter notebook
 # TODO
 
 # install rust
 curl https://sh.rustup.rs -sSf | sh
 
+# mosh for remote access
+sudo apt-get install mosh
 
-# useful commands for bash
-# bash profile
-echo -e "function bp { \n\temacs ~/.bashrc \n} \nfunction bpp { \n\tsource ~/.bashrc \n} " >> ~/.bashrc
 
