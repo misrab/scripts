@@ -18,6 +18,17 @@ sudo apt-get install emacs
 # install git
 sudo apt-get install git
 
+# install ruby and jekyll
+sudo apt-get install ruby ruby-dev make gcc
+sudo gem install jekyll bundler
+
+
+# install node.js and npm
+sudo apt-get install nodejs
+sudo apt-get install npm
+
+
+
 # install golang and create code repo
 # TODO
 mkdir ~/code && mkdir ~/code/github.com && mkdir ~/code/github.com/misrab
