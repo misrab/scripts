@@ -3,6 +3,10 @@
 # development environment
 export ENV="development"
 
+# golang
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+
 # aliases
 alias emacs="emacs -nw"
 alias sudo="sudo "
