@@ -30,8 +30,10 @@ sudo apt-get install npm
 
 
 # install golang and create code repo
-# TODO
+# NOTE GOPATH and GOROOT in misrabrc
 mkdir ~/code && mkdir ~/code/github.com && mkdir ~/code/github.com/misrab
+sudo apt install golang-go
+
 
 # install conda with jupyter notebook
 # TODO
