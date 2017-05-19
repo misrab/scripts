@@ -34,6 +34,19 @@ sudo apt-get install npm
 mkdir ~/code && mkdir ~/code/github.com && mkdir ~/code/github.com/misrab
 sudo apt install golang-go
 
+# add golang protobuf support
+# usage: protoc --go_out=. *.proto
+# partly taken from https://gist.github.com/sofyanhadia/37787e5ed098c97919b8c593f0ec44d8
+# Make sure you grab the latest version
+curl -OL https://github.com/google/protobuf/archive/v3.3.1.zip
+# Unzip
+unzip v3.3.1.zip -d protoc3
+# Move only protoc* to /usr/bin/
+sudo mv protoc3/bin/protoc /usr/bin/protoc
+# get golang command line tool
+go get -u github.com/golang/protobuf/protoc-gen-g
+
+
 
 # install conda with jupyter notebook
 # TODO
