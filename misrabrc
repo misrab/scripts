@@ -19,7 +19,7 @@ function bpp {
   source ~/.misrabrc
 }
 function gogit {
-  cd ~/code/github.com/misrab
+  cd ~/code/src/github.com/
 }
 function ct {
   cargo test -- --nocapture
