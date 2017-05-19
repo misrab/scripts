@@ -31,7 +31,7 @@ sudo apt-get install npm
 
 # install golang and create code repo
 # NOTE GOPATH and GOROOT in misrabrc
-mkdir ~/code && mkdir ~/code/github.com && mkdir ~/code/github.com/misrab
+mkdir ~/code && mkdir~/code/src && mkdir ~/code/src/github.com && mkdir ~/code/src/github.com/misrab
 sudo apt install golang-go
 
 # add golang protobuf support
