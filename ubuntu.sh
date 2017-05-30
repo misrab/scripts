@@ -5,6 +5,9 @@
 sudo apt update
 sudo apt upgrade 
 
+
+sudo apt-get install curl
+
 # get bash profile commands
 curl https://raw.githubusercontent.com/misrab/scripts/master/misrabrc > ~/.misrabrc
 source ~/.misrabrc
