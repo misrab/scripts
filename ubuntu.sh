@@ -35,19 +35,25 @@ sudo apt-get install npm
 # install golang and create code repo
 # NOTE GOPATH and GOROOT in misrabrc
 mkdir ~/code && mkdir~/code/src && mkdir ~/code/src/github.com && mkdir ~/code/src/github.com/misrab
-sudo apt install golang-go
+mkdir /home/misrab/go
+# sudo apt install golang-go
+# TODO install golang manually
+curl -OL https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
+sudo tar -xzf go*gz -C /usr/local
+rm go*gz
+
 
 # add golang protobuf support
 # usage: protoc --go_out=. *.proto
 # partly taken from https://gist.github.com/sofyanhadia/37787e5ed098c97919b8c593f0ec44d8
 # Make sure you grab the latest version
-curl -OL https://github.com/google/protobuf/archive/v3.3.1.zip
-# Unzip
-unzip v3.3.1.zip -d protoc3
-# Move only protoc* to /usr/bin/
-sudo mv protoc3/bin/protoc /usr/bin/protoc
-# get golang command line tool
-go get -u github.com/golang/protobuf/protoc-gen-g
+# curl -OL https://github.com/google/protobuf/archive/v3.3.1.zip
+# # Unzip
+# unzip v3.3.1.zip -d protoc3
+# # Move only protoc* to /usr/bin/
+# sudo mv protoc3/bin/protoc /usr/bin/protoc
+# # get golang command line tool
+# go get -u github.com/golang/protobuf/protoc-gen-g
 
 
 
@@ -56,6 +62,7 @@ go get -u github.com/golang/protobuf/protoc-gen-g
 
 # install rust
 curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
 
 # mosh for remote access
 sudo apt-get install mosh
