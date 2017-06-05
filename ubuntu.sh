@@ -68,3 +68,10 @@ source $HOME/.cargo/env
 sudo apt-get install mosh
 
 
+# install fluxgui, run fluxgui thereafter to set up
+sudo add-apt-repository ppa:nathan-renniewaldock/flux
+sudo apt-get update
+sudo apt-get install fluxgui
+
+
+
