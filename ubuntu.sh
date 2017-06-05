@@ -74,4 +74,6 @@ sudo apt-get update
 sudo apt-get install fluxgui
 
 
+# install python virtualenv
+sudo apt-get install python-pip python-dev python-virtualenv 
 
