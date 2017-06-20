@@ -35,9 +35,7 @@ sudo apt-get install npm
 # install golang and create code repo
 # NOTE GOPATH and GOROOT in misrabrc
 mkdir ~/code && mkdir~/code/src && mkdir ~/code/src/github.com && mkdir ~/code/src/github.com/misrab
-mkdir /home/misrab/go
-# sudo apt install golang-go
-# TODO install golang manually
+# install golang manually
 curl -OL https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
 sudo tar -xzf go*gz -C /usr/local
 rm go*gz
