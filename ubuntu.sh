@@ -8,6 +8,11 @@ sudo apt upgrade
 
 sudo apt-get install curl
 
+# multiple terminal windows
+sudo apt-get install screen
+
+
+
 # get bash profile commands
 curl https://raw.githubusercontent.com/misrab/scripts/master/misrabrc > ~/.misrabrc
 source ~/.misrabrc
@@ -17,6 +22,8 @@ echo "source ~/.misrabrc" >> ~/.bashrc
 
 # install and configure emacs
 sudo apt-get install emacs
+# install vim
+sudo apt-get install vim
 
 # install git
 sudo apt-get install git
