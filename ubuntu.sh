@@ -24,6 +24,8 @@ echo "source ~/.misrabrc" >> ~/.bashrc
 sudo apt-get install emacs
 # install vim
 sudo apt-get install vim
+# install janus vim essentials
+curl -L https://bit.ly/janus-bootstrap | bash
 
 # install git
 sudo apt-get install git
