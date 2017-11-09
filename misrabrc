@@ -11,10 +11,11 @@ export PATH=$PATH:$GOROOT/bin
 # aliases
 alias emacs="emacs -nw"
 alias sudo="sudo "
+alias screenrc="vim ~/.screenrc"
 
 # functions
 function bp {
-  emacs ~/.misrabrc
+  vim ~/.misrabrc
 }
 function bpp {
   source ~/.misrabrc
