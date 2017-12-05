@@ -23,6 +23,9 @@ function bpp {
 function gogit {
   cd ~/code/src/github.com/
 }
+function cb {
+  cargo bench
+}
 function ct {
   cargo test -- --nocapture
 }
