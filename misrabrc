@@ -16,6 +16,13 @@ alias screenrc="vim ~/.screenrc"
 alias open="nautilus -s ."
 
 # functions
+function commit {
+  #msg=$1
+  git add -A .
+  git commit -m "$1"
+}
+
+
 function bp {
   vim ~/.misrabrc
 }
