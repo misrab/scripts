@@ -4,7 +4,7 @@
 export ENV="development"
 
 # golang
-export GOROOT=/usr/local/go # we install here manually in ubuntu.sh
+export GOROOT=$HOME/go # we install here manually in ubuntu.sh
 export GOPATH=$HOME/code
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
