@@ -44,10 +44,12 @@ sudo apt-get install npm
 # install golang and create code repo
 # NOTE GOPATH and GOROOT in misrabrc
 mkdir ~/code && mkdir~/code/src && mkdir ~/code/src/github.com && mkdir ~/code/src/github.com/misrab
+
+# UPDATE - install manually (acutally)
 # install golang manually
-curl -OL https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
-sudo tar -xzf go*gz -C /usr/local
-rm go*gz
+# curl -OL https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz
+# sudo tar -xzf go*gz -C /usr/local
+# rm go*gz
 
 
 # add golang protobuf support
@@ -71,8 +73,9 @@ rm go*gz
 curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 
+# UPDATE - just use screen
 # mosh for remote access
-sudo apt-get install mosh
+# sudo apt-get install mosh
 
 
 # install fluxgui, run fluxgui thereafter to set up
