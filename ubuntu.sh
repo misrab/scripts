@@ -36,6 +36,8 @@ sudo gem install jekyll bundler
 
 
 # install node.js and npm
+curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+# review above for right version
 sudo apt-get install nodejs
 sudo apt-get install npm
 
