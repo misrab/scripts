@@ -1,4 +1,4 @@
-set number
+set nonumber relativenumber
 set tabstop=2
 
 call plug#begin('~/.vim/plugged')
