@@ -10,3 +10,5 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 call plug#end()
 execute pathogen#infect()
 call pathogen#helptags()
+
+let NERDTreeShowHidden=1
