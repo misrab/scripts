@@ -1,5 +1,6 @@
 set nonumber relativenumber
 set tabstop=2
+set shiftwidth=2
 
 call plug#begin('~/.vim/plugged')
 
