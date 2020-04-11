@@ -7,7 +7,8 @@ set shiftwidth=2
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
-Plug 'vbundles/nerdtree'
+Plug 'scroolose/nerdtree'
+Plug 'scroolose/nerdcommenter'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 call plug#end()
