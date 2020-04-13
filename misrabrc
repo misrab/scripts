@@ -15,6 +15,10 @@ alias sudo="sudo "
 alias screenrc="vim ~/.screenrc"
 alias open="nautilus -s ."
 
+# set vim as default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # functions
 function commit {
   #msg=$1
