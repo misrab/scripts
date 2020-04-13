@@ -17,7 +17,8 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 
 call plug#end()
 
-set nonumber relativenumber
+" set nonumber relativenumber
+set number " preference changed
 
 " To set indentation as spaces
 set tabstop=2
