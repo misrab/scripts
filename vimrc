@@ -26,3 +26,5 @@ set expandtab
 set shiftwidth=2
 
 let NERDTreeShowHidden=1
+
+set mouse=a
