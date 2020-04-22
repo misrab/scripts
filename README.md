@@ -15,3 +15,5 @@ In vim I ran :verbose set shiftwidth. Then sudo vim /usr/share/vim/vim80/ftplugi
 ### Function See Through
 
 ![function see through](/images/vim-function-seethrough.png)
+
+Taken from https://stackoverflow.com/questions/563616/vim-and-ctags-tips-and-tricks.
