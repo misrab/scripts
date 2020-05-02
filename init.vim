@@ -1,0 +1,38 @@
+" this is for neovim
+" it is usually found here: ~/.config/nvim/init.vim
+
+
+" Plugins will be downloaded under the specified directory.
+call plug#begin()
+
+" Declare the list of plugins.
+Plug 'tpope/vim-sensible'
+"Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdtree'
+Plug 'jacoborus/tender'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+" set nonumber relativenumber
+set number
+
+
+" To set indentation as spaces
+set shiftwidth=2
+set tabstop=2
+set expandtab
+
+" To allow NERDTree to delete files etc.
+set modifiable
+set mouse=a
+
+
+set background=dark
+colorscheme tender 
+syntax on
+
+" " Copy to clipboard
+vnoremap  <leader>y  "+y
+" as a reminder, you <leader> is \
