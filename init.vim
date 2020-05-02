@@ -36,3 +36,6 @@ syntax on
 " " Copy to clipboard
 vnoremap  <leader>y  "+y
 " as a reminder, you <leader> is \
+
+" unhighlight searches on escape
+nnoremap <esc> :noh<return><esc>
