@@ -1,6 +1,8 @@
 " this is for neovim
 " it is usually found here: ~/.config/nvim/init.vim
 
+" Required vim-plug to be installed
+
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin()
