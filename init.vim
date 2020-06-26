@@ -1,6 +1,9 @@
 " this is for neovim
 " it is usually found here: ~/.config/nvim/init.vim
 
+" Using nvim 0.3.8
+" Higher versions had issue with clipboard
+
 " Requires vim-plug to be installed
 
 
