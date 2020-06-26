@@ -44,3 +44,7 @@ vnoremap  <leader>y  "+y
 
 " unhighlight searches on escape
 nnoremap <esc> :noh<return><esc>
+
+" Avoid annoying vim-go warning for Vim < 0.4.0
+let g:go_version_warning = 0
+
