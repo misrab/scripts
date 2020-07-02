@@ -16,6 +16,7 @@ Plug 'tpope/vim-sensible'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'jacoborus/tender'
+Plug 'leafoftree/vim-vue-plugin'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
