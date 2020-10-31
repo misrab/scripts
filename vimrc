@@ -1,3 +1,7 @@
+" NOTE: this is for vim only
+" for neovim, use init.vim
+
+
 " Be sure to save and `source` this file
 " before trying out new plugins.
 
