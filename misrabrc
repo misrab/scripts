@@ -20,6 +20,7 @@ alias open="nautilus -s ."
 alias xclip="xclip -selection c"
 alias home="cd ~"
 alias weather='curl wttr.in'
+alias scm="rlwrap mit-scheme" # makes arrow keys work in scheme
 
 # set vim as default editor
 export VISUAL=vim
