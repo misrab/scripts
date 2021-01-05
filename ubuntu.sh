@@ -8,10 +8,6 @@ sudo apt upgrade
 
 sudo apt-get install curl
 
-# multiple terminal windows
-sudo apt-get install screen
-
-
 
 # get bash profile commands
 curl https://raw.githubusercontent.com/misrab/scripts/master/misrabrc > ~/.misrabrc
@@ -20,8 +16,6 @@ source ~/.misrabrc
 # load command in ~/.misrabrc and tell ~/.bashrc to read them
 echo "source ~/.misrabrc" >> ~/.bashrc
 
-# install and configure emacs
-sudo apt-get install emacs
 # install vim
 sudo apt-get install vim
 # install janus vim essentials
@@ -40,7 +34,6 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 # review above for right version
 sudo apt-get install nodejs
 sudo apt-get install npm
-
 
 
 # install golang and create code repo
