@@ -2,6 +2,12 @@
 " it is usually found here: ~/.config/nvim/init.vim
 
 " Using nvim 0.3.8
+" download from nvim releases page. I use nvim.appimage, then
+" ./nvim.appimage --appimage-extract
+" ./squashfs-root/AppRun --version
+# Optional: exposing nvim globally
+" mv squashfs-root / && ln -s /squashfs-root/AppRun /usr/bin/nvim
+" nvim
 " Higher versions had issue with clipboard
 
 " Requires vim-plug to be installed
