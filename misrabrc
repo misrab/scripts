@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# source this file at the bottom of ~/.bashrc
+
 # exports
 # development environment
 export ENV="development"
