@@ -2,11 +2,11 @@
 
 # a simple bash script for a fresh ubuntu install
 
-sudo apt update
-sudo apt upgrade 
+sudo apt update -y
+sudo apt upgrade -y
 
 
-sudo apt-get install curl
+sudo apt-get install curl -y
 
 
 # get bash profile commands
@@ -17,23 +17,28 @@ source ~/.misrabrc
 echo "source ~/.misrabrc" >> ~/.bashrc
 
 # install vim
-sudo apt-get install vim
+sudo apt-get install vim -y
 # install janus vim essentials
 curl -L https://bit.ly/janus-bootstrap | bash
 
+
+# install neovim
+# see init.vim file for instructions
+
+
 # install git
-sudo apt-get install git
+sudo apt-get install git -y
 
 # install ruby and jekyll
-sudo apt-get install ruby ruby-dev make gcc
-sudo gem install jekyll bundler
+# sudo apt-get install ruby ruby-dev make gcc
+# sudo gem install jekyll bundler
 
 
 # install node.js and npm
 curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
 # review above for right version
-sudo apt-get install nodejs
-sudo apt-get install npm
+sudo apt-get install nodejs -y
+sudo apt-get install npm -y
 
 
 # install golang and create code repo
@@ -76,9 +81,9 @@ source $HOME/.cargo/env
 # install fluxgui, run fluxgui thereafter to set up
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
 sudo apt-get update
-sudo apt-get install fluxgui
+sudo apt-get install fluxgui -y
 
 
 # install python virtualenv
-sudo apt-get install python-pip python-dev python-virtualenv 
+sudo apt-get install python-pip python-dev python-virtualenv -y
 
