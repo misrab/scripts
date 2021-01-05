@@ -21,11 +21,6 @@ sudo apt-get install vim -y
 # install janus vim essentials
 curl -L https://bit.ly/janus-bootstrap | bash
 
-
-# install neovim
-# see init.vim file for instructions
-
-
 # install git
 sudo apt-get install git -y
 
@@ -87,3 +82,14 @@ sudo apt-get install fluxgui -y
 # install python virtualenv
 sudo apt-get install python-pip python-dev python-virtualenv -y
 
+
+
+#
+# Manual
+#
+
+# install neovim
+# see init.vim file for instructions
+
+# install mysql
+# https://computingforgeeks.com/how-to-install-mysql-on-ubuntu-focal/
