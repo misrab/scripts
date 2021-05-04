@@ -11,6 +11,7 @@
 " Higher versions had issue with clipboard
 
 " Requires vim-plug to be installed
+" e.g. as such https://github.com/junegunn/vim-plug#windows-powershell-1 
 
 
 " Plugins will be downloaded under the specified directory.
