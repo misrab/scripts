@@ -2,28 +2,27 @@
 " it is usually found here: ~/.config/nvim/init.vim
 
 " Using nvim 0.3.8
-" download from nvim releases page. I use nvim.appimage, then
-" ./nvim.appimage --appimage-extract
-" ./squashfs-root/AppRun --version
-# Optional: exposing nvim globally
-" mv squashfs-root / && ln -s /squashfs-root/AppRun /usr/bin/nvim
-" nvim
 " Higher versions had issue with clipboard
 
 " Requires vim-plug to be installed
-" e.g. as such https://github.com/junegunn/vim-plug#windows-powershell-1 
 
 
 " Plugins will be downloaded under the specified directory.
-call plug#begin()
+" call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
+
 
 " Declare the list of plugins.
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 "Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'jacoborus/tender'
 Plug 'leafoftree/vim-vue-plugin'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'elixir-editors/vim-elixir'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -37,9 +36,6 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 
-" To allow NERDTree to delete files etc.
-set modifiable
-set mouse=a
 
 
 set background=dark
@@ -56,3 +52,10 @@ nnoremap <esc> :noh<return><esc>
 " Avoid annoying vim-go warning for Vim < 0.4.0
 let g:go_version_warning = 0
 
+" NERDTree on startup, from https://stackoverflow.com/questions/1447334/how-to-add-nerdtree-to-your-vimrc
+" autocmd VimEnter * NERDTree
+" don't close nerdtree when opening a file
+let g:NERDTreeQuitOnOpen = 0
+" To allow NERDTree to delete files etc.
+set modifiable
+set mouse=a
