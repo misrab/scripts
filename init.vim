@@ -23,6 +23,7 @@ Plug 'jacoborus/tender'
 Plug 'leafoftree/vim-vue-plugin'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'elixir-editors/vim-elixir'
+Plug 'cespare/vim-toml'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
