@@ -94,3 +94,10 @@ parse_git_branch() {
 #export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # my version
 export PS1="\[\033[1;30m\][\u]\[\e[0m\] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] >> "
+
+export PATH=$PATH:/usr/local/go/bin
+
+
+#  android studio
+# export ANDROID_HOME=$HOME/Android/Sdk
+# export PATH=$PATH:$ANDROID_HOME/tools
