@@ -80,7 +80,7 @@ sudo apt-get install fluxgui -y
 
 
 # install python virtualenv
-sudo apt-get install python3-pip python-dev python-virtualenv -y
+sudo apt-get install python3-pip python-dev python3-virtualenv -y
 
 
 
