@@ -13,6 +13,14 @@ sudo apt-get install curl -y
 curl https://raw.githubusercontent.com/misrab/scripts/master/misrabrc > ~/.misrabrc
 source ~/.misrabrc
 
+
+# install neovim 0.3.8
+# this curl url: not sure how to get the right one
+# curl https://github.com/neovim/neovim/releases/download/v0.3.8/nvim.appimage > /tmp/nvim
+# sudo mv /tmp/nvim /usr/bin/
+# chmod u+x ~/usr/bin/nvim
+
+
 # load command in ~/.misrabrc and tell ~/.bashrc to read them
 echo "source ~/.misrabrc" >> ~/.bashrc
 
