@@ -30,7 +30,7 @@ sudo apt-get install git -y
 
 
 # install node.js and npm
-curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 # review above for right version
 sudo apt-get install nodejs -y
 sudo apt-get install npm -y
@@ -80,7 +80,7 @@ sudo apt-get install fluxgui -y
 
 
 # install python virtualenv
-sudo apt-get install python-pip python-dev python-virtualenv -y
+sudo apt-get install python3-pip python-dev python-virtualenv -y
 
 
 
