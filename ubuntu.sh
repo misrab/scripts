@@ -14,11 +14,7 @@ curl https://raw.githubusercontent.com/misrab/scripts/master/misrabrc > ~/.misra
 source ~/.misrabrc
 
 
-# install neovim 0.3.8
-# this curl url: not sure how to get the right one
-# curl https://github.com/neovim/neovim/releases/download/v0.3.8/nvim.appimage > /tmp/nvim
-# sudo mv /tmp/nvim /usr/bin/
-# chmod u+x ~/usr/bin/nvim
+
 
 
 # load command in ~/.misrabrc and tell ~/.bashrc to read them
@@ -97,7 +93,15 @@ sudo apt-get install python3-pip python-dev python3-virtualenv -y
 #
 
 # install neovim
-# see init.vim file for instructions
+# install neovim 0.3.8
+# this curl url: not sure how to get the right one
+# curl https://github.com/neovim/neovim/releases/download/v0.3.8/nvim.appimage > /tmp/nvim
+# sudo mv /tmp/nvim /usr/bin/
+# chmod u+x ~/usr/bin/nvim
+mkdir ~/.config/nvim/
+curl https://raw.githubusercontent.com/misrab/scripts/master/init.vim > ~/.config/nvim/init.vim
+
+
 
 # install mysql
 # https://computingforgeeks.com/how-to-install-mysql-on-ubuntu-focal/
