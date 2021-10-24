@@ -39,7 +39,7 @@ function commit {
 
 
 function bp {
-  vim ~/.misrabrc
+  nvim ~/.misrabrc
 }
 function bpp {
   source ~/.misrabrc
