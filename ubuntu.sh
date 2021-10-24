@@ -12,13 +12,8 @@ sudo apt-get install curl -y
 # get bash profile commands
 curl https://raw.githubusercontent.com/misrab/scripts/master/misrabrc > ~/.misrabrc
 source ~/.misrabrc
-
-
-
-
-
 # load command in ~/.misrabrc and tell ~/.bashrc to read them
-echo "source ~/.misrabrc" >> ~/.bashrc
+echo "source ~/.misrabrc" >> ~/.bashrc && source ~/.bashrc
 
 # install vim
 sudo apt-get install vim -y
