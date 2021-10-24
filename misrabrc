@@ -18,7 +18,7 @@ alias desk="cd ~/Desktop"
 alias nvimcfg="nvim ~/.config/nvim/init.vim"
 alias emacs="emacs -nw"
 alias sudo="sudo "
-alias screenrc="vim ~/.screenrc"
+alias screenrc="nvim ~/.screenrc"
 alias open="nautilus -s ."
 # enables e.g. echo test | xclip
 alias xclip="xclip -selection c"
@@ -27,7 +27,7 @@ alias weather='curl wttr.in'
 alias scm="rlwrap mit-scheme" # makes arrow keys work in scheme
 
 # set vim as default editor
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # functions
