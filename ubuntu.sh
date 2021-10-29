@@ -128,6 +128,11 @@ mkdir ~/.config/nvim/
 curl https://raw.githubusercontent.com/misrab/scripts/master/init.vim > ~/.config/nvim/init.vim
 
 
+# clean up ctags
+# not doing this resulted in some nvim errors when opening a file in the past (Oct 2021)
+sudo apt-get remove exuberant-ctags
+sudo snap install universal-ctags
+
 
 # install mysql
 # https://computingforgeeks.com/how-to-install-mysql-on-ubuntu-focal/
