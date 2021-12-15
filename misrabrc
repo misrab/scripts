@@ -72,7 +72,7 @@ function push {
   if [[ ! -z $1 ]]; then
     git push origin $1
   else
-    git push origin master
+    git push origin main
   fi
 }
 # usage: pull [branch]
@@ -80,12 +80,12 @@ function pull {
   if [[ ! -z $1 ]]; then
     git pull origin $1
   else
-    git pull origin master
+    git pull origin main
   fi
 }
 function pullf {
   git fetch --all
-  git reset --hard origin/master
+  git reset --hard origin/main
 }
 
 # colors
