@@ -102,6 +102,10 @@ source $HOME/.cargo/env
 # mosh for remote access
 # sudo apt-get install mosh
 
+# install Scheme and other stuff for scheme
+sudo apt-get install -y rlwrap
+sudo apt-get install -y mit-scheme
+
 
 # install fluxgui, run fluxgui thereafter to set up
 sudo add-apt-repository ppa:nathan-renniewaldock/flux
