@@ -44,3 +44,14 @@ sudo chpass -s $BASH_LOCATION $USER
 # https://github.com/neovim/neovim/releases/tag/stable
 # mkdir ~/.config/nvim/
 # curl https://raw.githubusercontent.com/misrab/scripts/master/init.vim > ~/.config/nvim/init.vim
+
+
+
+# install golang and create code repo
+# NOTE GOPATH and GOROOT in misrabrc
+mkdir ~/code && mkdir~/code/src && mkdir ~/code/src/github.com && mkdir ~/code/src/github.com/misrab
+
+
+# install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source $HOME/.cargo/env
