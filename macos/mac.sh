@@ -39,7 +39,7 @@ sudo chpass -s $BASH_LOCATION $USER
 # I like the "Novel" built-in theme
 # in Terminal preferences can make it default startup
 
-# neovim 0.6.1
+# neovim 0.8.0
 # install release from here
 # https://github.com/neovim/neovim/releases/tag/stable
 # mkdir ~/.config/nvim/
