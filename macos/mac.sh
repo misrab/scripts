@@ -2,6 +2,19 @@
 
 
 USER=misrab
+PROFILE=~/.bash_profile
+
+# set up misrabrc
+# get bash profile commands
+curl https://raw.githubusercontent.com/misrab/scripts/master/misrabrc > ~/.misrabrc
+source ~/.misrabrc
+# load command in ~/.misrabrc and tell ~/.bashrc to read them
+echo "source ~/.misrabrc" >> $PROFILE && source $PROFILE
+
+# github
+# should be set up already
+# add computer's ssh key to github
+# when pushing ensure .git/config in repo uses ssh to avoid login prompt
 
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -25,8 +38,6 @@ sudo chpass -s $BASH_LOCATION $USER
 # terminal
 # I like the "Novel" built-in theme
 # in Terminal preferences can make it default startup
-# set default to bash instead of zsh
-chsh -s /bin/bash
 
 # neovim 0.6.1
 # install release from here
