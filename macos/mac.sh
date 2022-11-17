@@ -49,6 +49,7 @@ sudo chpass -s $BASH_LOCATION $USER
 
 # install golang and create code repo
 # NOTE GOPATH and GOROOT in misrabrc
+brew install golang
 mkdir ~/code && mkdir~/code/src && mkdir ~/code/src/github.com && mkdir ~/code/src/github.com/misrab
 
 
