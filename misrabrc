@@ -29,6 +29,7 @@ alias xclip="xclip -selection c"
 alias home="cd ~"
 alias weather='curl wttr.in'
 alias scm="rlwrap mit-scheme" # makes arrow keys work in scheme
+alias rkt="rlwrap racket" # makes arrow keys work in racket 
 
 # set nvim as default editor
 export VISUAL=nvim
