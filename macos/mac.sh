@@ -16,6 +16,10 @@ echo "source ~/.misrabrc" >> $PROFILE && source $PROFILE
 # add computer's ssh key to github
 # when pushing ensure .git/config in repo uses ssh to avoid login prompt
 
+
+# to allow up/down keys in scm/rkt bp shortcuts
+brew install rlwrap
+
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/misrab/.bash_profile
