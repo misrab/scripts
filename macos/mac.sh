@@ -20,6 +20,8 @@ echo "source ~/.misrabrc" >> $PROFILE && source $PROFILE
 # to allow up/down keys in scm/rkt bp shortcuts
 brew install rlwrap
 
+# brew install racket
+
 # install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/misrab/.bash_profile
