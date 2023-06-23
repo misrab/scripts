@@ -1,3 +1,8 @@
+" use kitty instead of MacOS Terminal
+" due to true color issues
+" https://sw.kovidgoyal.net/kitty/binary/
+
+
 " vim v0.9.1
 
 " use this as init.vim 
