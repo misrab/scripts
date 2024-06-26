@@ -13,6 +13,15 @@ export GO111MODULE=on
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 
+# python development
+function pipit {
+  if [[ -z $1 ]]; then
+    echo "Please provide a package name to install"
+    return
+  fi
+  pip3 install $1
+  pip3 freeze > requirements 
+}
 
 
 # aliases
