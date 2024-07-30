@@ -13,6 +13,13 @@ export GO111MODULE=on
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 
+alias hpsql="psql -h localhost -p 5432 -U dev_db_user -d dev_db"
+
+# docker shortcuts
+function dockerrmi {
+  docker rmi -f $(docker images -aq)
+}
+
 # python development
 function pipit {
   if [[ -z $1 ]]; then
